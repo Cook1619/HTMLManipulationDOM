@@ -51,7 +51,7 @@ friend.addEventListener("click", function(){
     let li = document.createElement('li');
     ul.appendChild(li);
     for(let i = 0; i < friends.length; i++){
-        var liText = document.createTextNode(friends[i]);
+        var liText = document.createTextNode(friends[i]+ " ");
+        li.appendChild(liText);
     }
-    li.appendChild(liText);
 })
